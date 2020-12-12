@@ -1,0 +1,214 @@
+body{
+    background-color: yellow;
+    margin-top: 8px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#logo{
+    width: 100px;
+
+}
+
+#listra{
+    height: 90px;
+    background-color: blue;
+    margin-top: 20px;
+    width: 1200px;
+    display: flex;
+    border-radius: 12px;
+}
+
+#cbf{
+    margin-left: 80px;
+    color: white;
+    margin-top: 34px;
+    font-family: '-webkit-pictograph';
+}
+
+#cbf1{
+    margin-left: 80px;
+    color: white;
+    margin-top: 34px;
+    font-family: '-webkit-pictograph';
+}
+
+#cbf2{
+    margin-left: 80px;
+    color: white;
+    margin-top: 34px;
+    font-family: '-webkit-pictograph';
+}
+
+.futBr{
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+.mais{
+    margin-left: 550px;
+    padding-top: 10px;
+}
+
+.menu{
+    display: flex;
+    width: 1349px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+#info{
+    color: white;
+    font-size: 18px;
+    font-family: Poppins,sans-serif;
+    z-index: 1;
+    position: absolute;
+    bottom: 80px;
+}
+
+#info1{
+    color: white;
+    font-size: 21px;
+    font-family: Poppins,sans-serif;
+    z-index: 1;
+    position: absolute;
+    bottom: 15px;
+}
+
+#imgFutBr{
+    background-image: url(https://agorarn.com.br/files/uploads/2020/09/futebol-3.jpg);
+    height: 550px;
+    width: 1200px;
+}
+
+#nmFutBr{
+    font-size: 70px;
+    text-align: center;
+    padding-top: 180px;
+    font-family: 'montserrat';
+    color: white;
+     margin-bottom: 0;
+}
+
+#nmFutBr1{
+    font-size: 21px;
+    text-align: center;
+    font-family: 'montserrat';
+    margin-top: 0;
+}
+
+#saibaMais{
+    text-align: center;
+    height: 50px;
+    width: 100px;
+    background-color: white;
+    border-left: 90px;
+}
+
+#saibaMais1{
+    padding-top: 12px;
+    font-family: montserrat;
+    color: black;
+}
+
+#shadow{
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0) 0%,rgba(0,0,0,.9) 100%);
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    margin-top: 80px;
+}
+
+#shadow1{
+    background: linear-gradient(180deg,transparent 0,rgba(0,0,0,.7) 80%,rgba(0,0,0,.7) 99%);    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.bab{
+    border-bottom: 1px solid white;
+    margin-top: 50px;
+    margin-right: 60px;
+    margin-left: 50px;
+}
+
+.imagem{
+    overflow: hidden;
+    position: relative;
+}
+
+.imagem img{
+    transition: all 0.3s;
+}
+
+.imagem:hover img{
+    transform: scale(1.1);
+} 
+
+.all{
+    margin-left: 70px;
+    margin-top: 50px;
+    margin-right: 18px;
+}
+
+.sessao{
+    display: flex;
+}
+
+.all .imagem img {
+    height: 354px;
+    width: 346px;
+    margin-right: -5px;
+    margin-bottom: -5px;
+}
+
+.text{
+    margin-left: 15px;
+}
+
+#searchbox {
+    padding: 5px 10px 5px 40px;
+    border-radius: 22px;
+    border: none;
+    background-color: #123996;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    transition: 1s;
+    margin-left: 30px;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.fechado {
+    width: 13%;
+}
+
+.aberto{
+    width: 90%;
+}
+
+.visivel{
+    display: contents;
+}
+
+.invisivel{
+    display: none;
+    z-index: 3;
+}
+
+#titulo-site{
+    color: white;
+    font-family: fantasy;
+    align-self: center;
+    margin-left: 150px;    
+    padding-top: 30px;
+    animation-direction: inherit;
+}
+
