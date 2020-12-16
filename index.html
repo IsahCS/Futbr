@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleMenu.css">
     <script type="text/javascript" src="buton.js"></script>
-
+    <script type="text/javascript" src="menu.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <title>Futebol Brasil</title>
 </head>
 <body>
@@ -14,17 +16,26 @@
         <section id="logo">
             <img src="https://conteudo.cbf.com.br/cdn/imagens/logos/logo-topo.png?v=20201203">
         </section>
-        <section id="listra">
+        <div id="listra">
             <input onmouseover="expandeBusca(this)" onmouseout="fechaBusca(this)" class="fechado" type="text" name="s" autocomplete="off" placeholder="Buscar" id="searchbox" value="">
             <div id="titulo-site" class="visivel">
                 <div id="cbf"><strong>A CBF</strong></div>
                 <div id="cbf1"><strong>SELEÇÃO BRASILEIRA</strong></div>
                 <div id="cbf2"><strong>FUTEBOL BRASILEIRO</strong></div>
             </div>
-        </section>
-    </div>
-
-    <div id="linha">
+            <div id="myMenu" class="menuMobile">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+                <div class="menuMobile-content"> 
+                    <a href="#">A CPF</a>
+                    <a href="#">SELEÇÃO BRASILEIRA</a>
+                    <a href="#">FUTEBOL BRASILEIRO</a>
+                  </div>
+            </div>
+            <div id="sessaoMenu" class="visivelMenu">
+                <span onclick="openMenu()"><strong>Menu</strong></span>
+                <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+            </div>
+        </div>
     </div>
 
     <div class="futBr">
@@ -42,7 +53,151 @@
         </div>
     </div>
 
-    <section class="bab"></section>
+    <div class="bab"></div>
+
+    <div class="timesBr">
+        <div id="brTimes">Times do Brasil</div>
+            <div class="margin">
+                <div id="section">
+                    <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk02X2rAIcQgz_XFUtrJJEXaKZOyOPg:1607873014499&q=Palmeiras&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMsc8qTtJSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iVMyAxJzc1syixeAIbIwDOEswnzAAAAA&ved=2ahUKEwjq1v3eocvtAhWwILkGHdgECI0Q-BYwP3oECCUQPg&cshid=1607873307092191&biw=1366&bih=657" target="_blank">
+                        <div class="cardsTimes">
+                            <img src="./img/download (1).png">
+                            <div class="iggQde">
+                                <div class="fBr">Sociedade Esportiva Palmeiras</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk03l7gCwJ8Ys5sANljMLPn_F_ekBDA:1607873667721&q=Flamengo&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMsc0oqtZSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iVwy0nMTc1Lz1_AhsjAFXejNzLAAAA&ved=2ahUKEwj77rqWpMvtAhXBGrkGHcmVAKQQ-BYwPHoECCUQOw&biw=1366&bih=657" target="_blank">
+                        <div class="cardsTimes">
+                            <img src="./img/download (2).png">
+                            <div class="iggQde">
+                                <div class="fBr">Clube de Regatas do Flamengo</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk03l7gCwJ8Ys5sANljMLPn_F_ekBDA:1607873667721&q=Corinthians&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMsc8rKtJSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iV2zm_KDOvJCMzMa94AhsjAGFjMBvOAAAA&ved=2ahUKEwj77rqWpMvtAhXBGrkGHcmVAKQQ-BYwP3oECCUQRA&cshid=1607873847339202&biw=1366&bih=657" target="_blank">    
+                        <div class="cardsTimes">
+                            <img src="./img/download (3).png">
+                            <div class="iggQde">
+                                <div class="fBr">Sport Club Corinthians Paulista</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk00rS2tu30omh-dTnkDRnGiFsRP1cQ:1607874397503&q=Atl%C3%A9tico-MG&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMsc82qtJSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iVx7Ek5_DKkszkfF1f9wlsjAB0JXy7zwAAAA&ved=2ahUKEwiBvrnypsvtAhXaLLkGHVU-B50Q-BYwZ3oECCUQSg&biw=1366&bih=657" target="_blank">
+                        <div class="cardsTimes">
+                            <img src="./img/download (4).png">
+                            <div class="iggQde">
+                                <div class="fBr">Clube Atlético Mineiro</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk02jFb5bPiIFcKBECvk8sHayQZdWww:1607874420646&q=S%C3%A3o+Paulo&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMsc02MtJSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iVK_jw4nyFgMTSnPwJbIwAUbENAc0AAAA&ved=2ahUKEwjy-L39psvtAhXvLLkGHapUDvQQ-BYwOHoECCUQTQ&biw=1366&bih=657" target="_blank">
+                        <div class="cardsTimes">
+                            <img src="./img/download.jfif">
+                            <div class="iggQde">
+                                <div class="fBr">São Paulo Futebol Clube</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk02oiELoeFHJ1U7K3nVfvbvbHgnEEw:1607874437635&q=Sele%C3%A7%C3%A3o+Brasileira&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLOMTY3itZSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4hVJDg1J_Xw8sOL8xWcihKLM3NSM4sSJ7AxAgDGU7Vm1wAAAA&ved=2ahUKEwikgMuFp8vtAhXfIrkGHU0aC_wQ-BYwN3oECCQQOA&biw=1366&bih=657" target="_blank">
+                        <div class="cardsTimes">
+                            <img src="./img/download.png">
+                            <div class="iggQde">
+                                <div class="fBr">Seleção Brasileira</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk002u-2DMSivl_Yt9p3ve_MJb7fEZg:1607874463377&q=Fluminense&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMscy0ztJSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iVyy2nNDczLzWvOHUCGyMA7hUL180AAAA&ved=2ahUKEwiAku6Rp8vtAhX-HLkGHQbSAUAQ-BYwQHoECCIQXA&biw=1366&bih=657" target="_blank">
+                        <div class="cardsTimes">
+                            <img src="./img/download (1).jfif">
+                            <div class="iggQde">
+                                <div class="fBr">Fluminense Football Club</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk00E6u2CJLxNgQmQv06N-wXUuRKjUQ:1607874477830&q=Gr%C3%AAmio&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMsc00NtZSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iV3b3o8KrczPwJbIwAba_bYMoAAAA&ved=2ahUKEwjMpuCYp8vtAhVQK7kGHVJsD28Q-BYwaHoECCUQUw&biw=1366&bih=657" target="_blank">
+                        <div class="cardsTimes">
+                            <img src="./img/download 13 (1).png">
+                            <div class="iggQde">
+                                <div class="fBr">Grêmio Foot-Ball Porto Alegrense</div>
+                            </div>
+                        </div> 
+                    </a>
+                    <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk02ihLF5W2NCVnw-FORuFgWpNl7lxw:1607874497119&q=Santos&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMscypytZSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iVLTgxryS_eAIbIwDcuJVhyQAAAA&ved=2ahUKEwjyzPmhp8vtAhUZF7kGHUE4CDYQ-BYwSnoECCUQXw&biw=1366&bih=657" target="_blank">
+                        <div class="cardsTimes">
+                            <img src="./img/download 13 (2).png">
+                            <div class="iggQde">
+                                <div class="fBr">Santos Futebol Clube</div>
+                            </div>
+                        </div> 
+                    </a>
+                    <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk02JRNMYlz-e9PfcI45UE1RYIClSjw:1607874528927&q=Vasco&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMsc5NztZSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iVNSyxODl_AhsjANmNhMTIAAAA&ved=2ahUKEwiz_Y6xp8vtAhUOGbkGHQwxARIQ-BYwQ3oECCUQRw&biw=1366&bih=657" target="_blank">
+                        <div class="cardsTimes">
+                            <img src="./img/download 14.jfif">
+                            <div class="iggQde">
+                                <div class="fBr">Club de Regatas Vasco da Gama</div>
+                            </div>
+                        </div> 
+                    </a>
+                    <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk00OqjYH_ihoCdK-QLb-0v6TRjZYxQ:1607874552205&q=Am%C3%A9rica-MG&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLFM402L0rWUspOt9HPykxNLMvPz4Ayr4oL8opJihZLUxNziR4z13AIvf9wTliqbtObkNcYCLiI0CblxsbnmlWSWVApJcfFIwe3WYJDi4oLzpBSUuHg1XjZ_Fz1wheehlhDneY0zr49HzmEQTLbT_MQmGqVpxaTBxLOIldsx9_DKoszkRF1f9wlsjACW_72BzgAAAA&ved=2ahUKEwje4pu8p8vtAhVoILkGHQl1AbYQ-BYwanoECCUQZQ&biw=1366&bih=657" target="_blank">
+                        <div class="cardsTimes">
+                            <img src="./img/download 15.png">
+                            <div class="iggQde">
+                                <div class="fBr">América Futebol Clube</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk00dgbD2lWmMa6xybZmn0MpL0v-2CA:1607874578368&q=Fortaleza&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLGMzdOyjbWUspOt9HPykxNLMvPz4Ayr4oL8opJihZLUxNziR4z13AIvf9wTliqbtObkNcYCLiI0CblxsbnmlWSWVApJcfFIwe3WYJDi4oLzpBSUuHg1XjZ_Fz1wheehlhDneY0zr49HzmEQTLbT_MQmGqVpxaTBxLOIldMNaHRiTmpV4gQ2RgD8eD0kzAAAAA&ved=2ahUKEwiaztjIp8vtAhUMD7kGHRlBDdkQ-BYwQ3oECCUQdA&biw=1366&bih=657" target="_blank">
+                        <div class="cardsTimes">
+                            <img src="./img/download 16.png">
+                            <div class="iggQde">
+                                <div class="fBr">Fortaleza Esporte Clube</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk02mTX1OJ8ffgwzpWYDx8K6v5ty_Qw:1607874596574&q=EC+Vit%C3%B3ria&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMscy1ytZSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iV29VZISyz5PDmoszECWyMAHTipQzOAAAA&ved=2ahUKEwi-46_Rp8vtAhUOHrkGHSPDBdgQ-BYwSnoFCCUQiQE&biw=1366&bih=657" target="_blank">
+                        <div class="cardsTimes">
+                            <img src="./img/download 17.jfif">
+                            <div class="iggQde">
+                                <div class="fBr">Esporte Clube Vitória</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section1">   
+            <div class="section2">
+                <div id="textVideos">Videos do Futebol brasileiro</div>
+            </div>
+            <div class="section3">
+                <div class="section4"></div>
+                    <div id="cheers">
+                        <div class="item"><iframe width="500" height="280"  src="https://www.youtube.com/embed/V7Pgf7GD23M" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="item"><iframe width="500" height="280" src="https://www.youtube.com/embed/U-pKo9rZWOo" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="item"><iframe width="500" height="280" src="https://www.youtube.com/embed/JrWMQS-tHrU" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="item"><iframe width="500" height="280" src="https://www.youtube.com/embed/Rkia2q5uZ_8" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="item"><iframe width="500" height="280" src="https://www.youtube.com/embed/t2KoHv1WNfE" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="item"><iframe width="500" height="280" src="https://www.youtube.com/embed/ySrFB9fYzAk" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="item"><iframe width="500" height="280" src="https://www.youtube.com/embed/oxgGB8DFPVg" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                    
+                    <div class="swiperprev"href="#"><i class="fas fa-chevron-left"></i></div>
+                    <div class="swipernext"href="#"><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bab"></div>
 
     <div class="sessao">
         <div class="all">
@@ -76,119 +231,5 @@
             </div>
         </div>
     </div>
-
-    <section class="bab"></section>
-
-    <div class="timesBr">
-        <section id="brTimes">Times do Brasil</section>
-            <div id="section">
-            <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk02X2rAIcQgz_XFUtrJJEXaKZOyOPg:1607873014499&q=Palmeiras&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMsc8qTtJSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iVMyAxJzc1syixeAIbIwDOEswnzAAAAA&ved=2ahUKEwjq1v3eocvtAhWwILkGHdgECI0Q-BYwP3oECCUQPg&cshid=1607873307092191&biw=1366&bih=657" target="_blank">
-                <div class="cardsTimes">
-                    <img src="./img/download (1).png">
-                    <div class="iggQde">
-                        <div class="fBr">Sociedade Esportiva Palmeiras</div>
-                    </div>
-                </div>
-            </a>
-            <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk03l7gCwJ8Ys5sANljMLPn_F_ekBDA:1607873667721&q=Flamengo&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMsc0oqtZSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iVwy0nMTc1Lz1_AhsjAFXejNzLAAAA&ved=2ahUKEwj77rqWpMvtAhXBGrkGHcmVAKQQ-BYwPHoECCUQOw&biw=1366&bih=657" target="_blank">
-                <div class="cardsTimes">
-                    <img src="./img/download (2).png">
-                    <div class="iggQde">
-                        <div class="fBr">Clube de Regatas do Flamengo</div>
-                    </div>
-                </div>
-            </a>
-            <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk03l7gCwJ8Ys5sANljMLPn_F_ekBDA:1607873667721&q=Corinthians&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMsc8rKtJSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iV2zm_KDOvJCMzMa94AhsjAGFjMBvOAAAA&ved=2ahUKEwj77rqWpMvtAhXBGrkGHcmVAKQQ-BYwP3oECCUQRA&cshid=1607873847339202&biw=1366&bih=657" target="_blank">    
-                <div class="cardsTimes">
-                    <img src="./img/download (3).png">
-                    <div class="iggQde">
-                        <div class="fBr">Sport Club Corinthians Paulista</div>
-                    </div>
-                </div>
-            </a>
-            <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk00rS2tu30omh-dTnkDRnGiFsRP1cQ:1607874397503&q=Atl%C3%A9tico-MG&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMsc82qtJSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iVx7Ek5_DKkszkfF1f9wlsjAB0JXy7zwAAAA&ved=2ahUKEwiBvrnypsvtAhXaLLkGHVU-B50Q-BYwZ3oECCUQSg&biw=1366&bih=657" target="_blank">
-                <div class="cardsTimes">
-                    <img src="./img/download (4).png">
-                    <div class="iggQde">
-                        <div class="fBr">Clube Atlético Mineiro</div>
-                    </div>
-                </div>
-            </a>
-            <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk02jFb5bPiIFcKBECvk8sHayQZdWww:1607874420646&q=S%C3%A3o+Paulo&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMsc02MtJSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iVK_jw4nyFgMTSnPwJbIwAUbENAc0AAAA&ved=2ahUKEwjy-L39psvtAhXvLLkGHapUDvQQ-BYwOHoECCUQTQ&biw=1366&bih=657" target="_blank">
-                <div class="cardsTimes">
-                    <img src="./img/download.jfif">
-                    <div class="iggQde">
-                        <div class="fBr">São Paulo Futebol Clube</div>
-                    </div>
-                </div>
-            </a>
-            <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk02oiELoeFHJ1U7K3nVfvbvbHgnEEw:1607874437635&q=Sele%C3%A7%C3%A3o+Brasileira&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLOMTY3itZSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4hVJDg1J_Xw8sOL8xWcihKLM3NSM4sSJ7AxAgDGU7Vm1wAAAA&ved=2ahUKEwikgMuFp8vtAhXfIrkGHU0aC_wQ-BYwN3oECCQQOA&biw=1366&bih=657" target="_blank">
-                <div class="cardsTimes">
-                    <img src="./img/download.png">
-                    <div class="iggQde">
-                        <div class="fBr">Seleção Brasileira</div>
-                    </div>
-                </div>
-            </a>
-            <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk002u-2DMSivl_Yt9p3ve_MJb7fEZg:1607874463377&q=Fluminense&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMscy0ztJSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iVyy2nNDczLzWvOHUCGyMA7hUL180AAAA&ved=2ahUKEwiAku6Rp8vtAhX-HLkGHQbSAUAQ-BYwQHoECCIQXA&biw=1366&bih=657" target="_blank">
-                <div class="cardsTimes">
-                    <img src="./img/download (1).jfif">
-                    <div class="iggQde">
-                        <div class="fBr">Fluminense Football Club</div>
-                    </div>
-                </div>
-            </a>
-            <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk00E6u2CJLxNgQmQv06N-wXUuRKjUQ:1607874477830&q=Gr%C3%AAmio&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMsc00NtZSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iV3b3o8KrczPwJbIwAba_bYMoAAAA&ved=2ahUKEwjMpuCYp8vtAhVQK7kGHVJsD28Q-BYwaHoECCUQUw&biw=1366&bih=657" target="_blank">
-                <div class="cardsTimes">
-                    <img src="./img/download 13 (1).png">
-                    <div class="iggQde">
-                        <div class="fBr">Grêmio Foot-Ball Porto Alegrense</div>
-                    </div>
-                </div> 
-            </a>
-            <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk02ihLF5W2NCVnw-FORuFgWpNl7lxw:1607874497119&q=Santos&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMscypytZSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iVLTgxryS_eAIbIwDcuJVhyQAAAA&ved=2ahUKEwjyzPmhp8vtAhUZF7kGHUE4CDYQ-BYwSnoECCUQXw&biw=1366&bih=657" target="_blank">
-                <div class="cardsTimes">
-                    <img src="./img/download 13 (2).png">
-                    <div class="iggQde">
-                        <div class="fBr">Santos Futebol Clube</div>
-                    </div>
-                </div> 
-            </a>
-            <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk02JRNMYlz-e9PfcI45UE1RYIClSjw:1607874528927&q=Vasco&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMsc5NztZSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iVNSyxODl_AhsjANmNhMTIAAAA&ved=2ahUKEwiz_Y6xp8vtAhUOGbkGHQwxARIQ-BYwQ3oECCUQRw&biw=1366&bih=657" target="_blank">
-                <div class="cardsTimes">
-                    <img src="./img/download 14.jfif">
-                    <div class="iggQde">
-                        <div class="fBr">Club de Regatas Vasco da Gama</div>
-                    </div>
-                </div> 
-            </a>
-            <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk00OqjYH_ihoCdK-QLb-0v6TRjZYxQ:1607874552205&q=Am%C3%A9rica-MG&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLFM402L0rWUspOt9HPykxNLMvPz4Ayr4oL8opJihZLUxNziR4z13AIvf9wTliqbtObkNcYCLiI0CblxsbnmlWSWVApJcfFIwe3WYJDi4oLzpBSUuHg1XjZ_Fz1wheehlhDneY0zr49HzmEQTLbT_MQmGqVpxaTBxLOIldsx9_DKoszkRF1f9wlsjACW_72BzgAAAA&ved=2ahUKEwje4pu8p8vtAhVoILkGHQl1AbYQ-BYwanoECCUQZQ&biw=1366&bih=657" target="_blank">
-                <div class="cardsTimes">
-                    <img src="./img/download 15.png">
-                    <div class="iggQde">
-                        <div class="fBr">América Futebol Clube</div>
-                    </div>
-                </div>
-            </a>
-            <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk00dgbD2lWmMa6xybZmn0MpL0v-2CA:1607874578368&q=Fortaleza&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLGMzdOyjbWUspOt9HPykxNLMvPz4Ayr4oL8opJihZLUxNziR4z13AIvf9wTliqbtObkNcYCLiI0CblxsbnmlWSWVApJcfFIwe3WYJDi4oLzpBSUuHg1XjZ_Fz1wheehlhDneY0zr49HzmEQTLbT_MQmGqVpxaTBxLOIldMNaHRiTmpV4gQ2RgD8eD0kzAAAAA&ved=2ahUKEwiaztjIp8vtAhUMD7kGHRlBDdkQ-BYwQ3oECCUQdA&biw=1366&bih=657" target="_blank">
-                <div class="cardsTimes">
-                    <img src="./img/download 16.png">
-                    <div class="iggQde">
-                        <div class="fBr">Fortaleza Esporte Clube</div>
-                    </div>
-                </div>
-            </a>
-            <a href="https://www.google.com/search?sa=X&rlz=1C1GCEU_pt-BRBR859BR859&sxsrf=ALeKk02mTX1OJ8ffgwzpWYDx8K6v5ty_Qw:1607874596574&q=EC+Vit%C3%B3ria&stick=H4sIAAAAAAAAAONgFuLQz9U3MDRNK1LiBLMscy1ytZSyk630c_KTE0sy8_PgDKvigvyikmKFktTE3OJHjPXcAi9_3BOWKpu05uQ1xgIuIjQJuXGxueaVZJZUCklx8UjB7dZgkOLigvOkFJS4eDVeNn8XPXCF56GWEOd5jTOvj0fOYRBMttP8xCYapWnFpMHEs4iV29VZISyz5PDmoszECWyMAHTipQzOAAAA&ved=2ahUKEwi-46_Rp8vtAhUOHrkGHSPDBdgQ-BYwSnoFCCUQiQE&biw=1366&bih=657" target="_blank">
-                <div class="cardsTimes">
-                    <img src="./img/download 17.jfif">
-                    <div class="iggQde">
-                        <div class="fBr">Esporte Clube Vitória</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-
-
 </body>
 </html>
