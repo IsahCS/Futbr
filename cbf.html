@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A CBF</title>
+    <link rel="stylesheet" type="text/css" href="./cbf.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleMenu.css">
+    <script type="text/javascript" src="buton.js"></script>
+    <script type="text/javascript" src="menu.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <section id="logo">
+            <img src="https://conteudo.cbf.com.br/cdn/imagens/logos/logo-topo.png?v=20201203">
+        </section>
+        <div id="listra">
+            <input onmouseover="expandeBusca(this)" onmouseout="fechaBusca(this)" class="fechado" type="text" name="s" autocomplete="off" placeholder="Buscar" id="searchbox" value="">
+            <div id="titulo-site" class="visivel">
+                <div id="cbf"><strong><a href="./cbf.html">A CBF</a></strong></div>
+                <div id="cbf1"><strong><a href="./selecaoBr.html">SELEÇÃO BRASILEIRA</a></strong></div>
+                <div id="cbf2"><strong><a href="./futebolBr.html">FUTEBOL BRASILEIRO</a></strong></div>
+            </div>
+            <div id="myMenu" class="menuMobile">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+                <div class="menuMobile-content"> 
+                    <a href="./cbf.html">A CBF</a>
+                    <a href="./selecaoBr.html">SELEÇÃO BRASILEIRA</a>
+                    <a href="./futebolBr.html">FUTEBOL BRASILEIRO</a>
+                </div>
+            </div>
+            <div id="sessaoMenu" class="visivelMenu">
+                <i onclick="openMenu()" id="barras" class="fas fa-bars" aria-hidden="true"></i>
+                <span onclick="openMenu()"><strong>Menu</strong></span>
+            </div>
+        </div>
+    </div>
+    
+    <div id="logo1">
+        <div class="bloco">
+            <div id="texto">
+                Confederação Brasileira de Futebol (CBF) é a entidade máxima do futebol no Brasil. 
+                Fundada em 8 de junho de 1914, sob a denominação Federação Brasileira de Sports (FBS),
+                a CBF, tal como existe hoje, foi fundada em 24 de setembro de 1979,[2] quando ocorreu 
+                a desmembração da Confederação Brasileira de Desportos (CBD), entidade sucessora da FBS, 
+                que além de comandar o futebol, aglutinava os demais esportes olímpicos praticados em
+                território brasileiro.[3] A CBF é responsável pela organização de campeonatos de alcance nacional. 
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

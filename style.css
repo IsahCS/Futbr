@@ -12,6 +12,7 @@ body{
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 #logo{
@@ -57,7 +58,7 @@ a{
 }
 
 .mais{
-    padding-top: 10px;
+    padding-top: 30px;
     display: flex;
     justify-content: center;
 }
@@ -91,23 +92,25 @@ a{
     background-image: url(https://agorarn.com.br/files/uploads/2020/09/futebol-3.jpg);
     height: 550px;
     margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     position: relative;
+    justify-content: center;
 }
 
 #nmFutBr{
-    font-size: 70px;
-    text-align: center;
-    padding-top: 180px;
+    font-size: 90px;
+    margin: 0;
     font-family: 'montserrat';
     color: white;
-     margin-bottom: 0;
 }
 
 #nmFutBr1{
     font-size: 21px;
-    text-align: center;
     font-family: 'montserrat';
-    margin-top: 0;
+    margin-top: 30px;
 }
 
 #saibaMais{
@@ -171,6 +174,13 @@ a{
 
 .sessao{
     display: flex;
+}
+
+
+@media only screen and (max-width: 680px) {
+    #nmFutBr{
+        font-size: 65px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -362,9 +372,9 @@ a{
 #cheers{
     display: flex;
     padding-top: 60px;
-    margin-left: 64px;
+    margin-left: 80px;
     overflow-x: auto;
-    margin-right: 62px;
+    margin-right: 80px;
 }
 
 #cheers::-webkit-scrollbar {
@@ -375,7 +385,7 @@ a{
     position: relative;
 }
 
-.swipernext{
+/*.swipernext{
     right: 10px;
     position: absolute;
     cursor: pointer;
@@ -391,7 +401,7 @@ a{
     position: absolute;
     margin-top: -180px;
     color: white;
-}
+}*/
 
 .fa, .fab, .fal, .far, .fas {
     -moz-osx-font-smoothing: grayscale;
@@ -401,5 +411,53 @@ a{
     font-variant: normal;
     text-rendering: auto;
     line-height: 1;
+    font-size: 30px;
+}
+
+ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 155px;
+    z-index: 1;
+}
+
+ul li{
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    background: #262626;
+    margin: 0 10px;
+    border-radius: 50%;
+    transition: .5s;
+ }
+ 
+ ul li:hover{
+    background-color: yellow;
+ }
+
+#fas{
+    position: absolute;
+    margin-left: 28px;
+}
+
+#fa{
+    position: absolute;
+    margin-left: 100%;
+    right: 28px;
+}
+
+.next .prev{
+    position: relative;
+}
+
+#barras{
     font-size: 17px;
 }
