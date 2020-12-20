@@ -167,15 +167,13 @@ a{
 } 
 
 .all{
-    margin: 5px;
+    margin: 10px;
     margin-top: 50px;}
 
 .sessao{
     display: flex;
-    margin-bottom: 30px;
     justify-content: space-between;
-    margin-left: 70px;
-    margin-right: 60px;
+    margin: 15px 20px 30px 20px;
 }
 
 
@@ -188,8 +186,30 @@ a{
 @media only screen and (max-width: 1000px) {
     .sessao{
         overflow-x: auto;
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #imgFutBr {
+        margin: 13px;
+    }
+    #brTimes{
+        font-size: 1.7rem;
+        margin-left: 20px;
+    }
+    body{
+        background-color: #ffff43;
+    }
+     .cardsTimes img {
+        height: 140px;
+        width: 140px;
+    }
+    .cardsTimes{
+        width: 140px;
+    }
+    .fBr{
+        font-size: 1.063rem;
+        height: 65px;
+        width: 132px;
     }
     #shadow1{
         width: 345px;
@@ -210,12 +230,22 @@ a{
         display: none;
     }
     .margin{
-        margin-left: -40px;
-        margin-right: -40px;
+        margin-left: -57px;
+        margin-right: -60px;
     }
-
+    .bab {
+        margin-top: 50px;
+        margin-right: 15px;
+        margin-left: 14px;
+    }
     .aberto{
         width: 100%;
+    }
+    #searchbox {
+        padding: 5px 0px 5px 13px;
+    }
+    .fechado{
+        width: 53px;
     }
 }
 
@@ -239,7 +269,7 @@ a{
 }
 
 #searchbox {
-    padding: 5px 10px 5px 40px;
+    padding: 5px 0px 5px 13px;
     border-radius: 22px;
     border: none;
     background-color: #123996;
@@ -253,7 +283,7 @@ a{
 }
 
 .fechado {
-    width: 13%;
+    width: 53px;
 }
 
 .aberto{
@@ -373,9 +403,9 @@ a{
 #cheers{
     display: flex;
     padding-top: 60px;
-    margin-left: 80px;
+    margin-left: 10px;
     overflow-x: auto;
-    margin-right: 80px;
+    margin-right: 10px;
 }
 
 #cheers::-webkit-scrollbar {
