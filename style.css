@@ -186,7 +186,7 @@ a{
 @media only screen and (max-width: 1000px) {
     .sessao{
         overflow-x: auto;
-        margin-left: 1px;
+        margin-left: 5px;
         margin-right: 10px;
     }
     #imgFutBr {
@@ -205,6 +205,7 @@ a{
     }
     .cardsTimes{
         width: 140px;
+        height: 225px;
     }
     .fBr{
         font-size: 1.063rem;
