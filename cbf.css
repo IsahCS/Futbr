@@ -41,7 +41,6 @@ html, body {
     margin-right: 500px;
     margin-top: 10px;
     transition: all 0.3s;
-
 } 
 
 .si:hover img{
@@ -130,6 +129,12 @@ html, body {
     .si img{
         margin: 0;
     }
+    body{
+        background-color: #d8d800;
+    }
+    #arbitragem{
+        margin: 15px;
+    }
     #logo1{
         height: 540px;
         width: 340px;
@@ -159,10 +164,10 @@ html, body {
     }
     #mg{
         width: 400px;
-        padding: 80px;
+        padding: 73px;
     }
     .joki {
-        padding-top: 55px;
+        padding-top: 40px;
     }
     .sidri{
         margin: 5px;

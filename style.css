@@ -4,7 +4,7 @@ html, body {
 
 
 body{
-    background-color: yellow;
+    background-color: rgb(233, 233, 16);
     position: absolute;
     width: 100%;
     margin: 7px 0;
@@ -186,7 +186,7 @@ a{
 @media only screen and (max-width: 1000px) {
     .sessao{
         overflow-x: auto;
-        margin-left: 10px;
+        margin-left: 1px;
         margin-right: 10px;
     }
     #imgFutBr {
@@ -197,7 +197,7 @@ a{
         margin-left: 20px;
     }
     body{
-        background-color: #ffff43;
+        background-color: #d8d800;
     }
      .cardsTimes img {
         height: 140px;
