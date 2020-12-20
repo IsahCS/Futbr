@@ -2,15 +2,18 @@ body{
     background-color: yellow;
 }
 
+html, body {
+    overflow: auto;
+}
+
 #logo1 {
-    margin-left: 500px;
-    height: 200px;
+    height: 240px;
     background-color: blue;
-    margin-right: 20px;
     margin-top: 70px;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    box-shadow: 2px 2px 10px rgba(0,0,2);
+    width: 700px;
 }
 
 .bloco{
@@ -20,12 +23,158 @@ body{
     align-items: center;
     margin-right: 20px;
     border-radius: 10px;
-    height: 170px;
+    height: 210px;
+    margin-left: 140px;
 }
 
 #texto{
     text-align: justify;
     font-family: cursive;
     margin-right: 20px;
-    margin-left: 90px;
+    margin-left: 150px;
+    margin-left: 20px;
+}
+
+.si img{
+    position: absolute;
+    width: 460px;
+    margin-right: 500px;
+    margin-top: 10px;
+    transition: all 0.3s;
+
+} 
+
+.si:hover img{
+    transform: scale(1.1);
+}
+
+.si{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    padding-right: 50px;
+}
+
+#skj{
+    width: 100%;
+    padding-top: 50px;
+    height: 350px;
+}
+
+.dewok{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    margin-right: 60px;
+    margin-top: 30px;
+}
+
+.sidri .imagem img {
+    height: 354px;
+    width: 346px;
+    margin-right: -5px;
+    margin-bottom: -5px;
+}
+
+.sidri{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.textSidri{
+    margin-left: 15px;
+}
+
+#infoSidri{
+    color: white;
+    font-size: 18px;
+    font-family: Poppins,sans-serif;
+    z-index: 1;
+    position: absolute;
+    bottom: 110px;
+}
+
+#info1{
+    color: white;
+    font-size: 21px;
+    font-family: Poppins,sans-serif;
+    z-index: 1;
+    position: absolute;
+    bottom: 15px;
+    margin-right: 10px;
+}
+
+#arbitragem{
+    margin-left: 70px;
+    font-family: system-ui;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.joki{
+    padding-top: 70px;
+}
+
+@media only screen and (min-width: 1000px){
+    #mg{
+        display: none;
+        margin: 0;
+    }
+
+}
+
+@media only screen and (max-width: 1000px){
+    .dewok{
+        overflow-x: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #arbitragem{
+        text-align: center;
+        margin: 0;
+    }
+    #logo1{
+        height: 450px;
+        width: 340px;
+        padding-top: 220px;
+        margin-right: 100px;
+        margin-top: 130px;
+    }
+    .bloco{
+        height: 410px;
+        width: 300px;
+        margin: 20px;
+    }
+    #skj{
+        height: 840px;
+        padding: 0;
+    }
+    .si{
+        justify-content: center;
+        margin-left: 147px;
+    }
+    #mg1{
+        margin: 0;
+        width: 540px;
+        display: none;
+    }
+    #mg{
+        margin: 100px;
+        width: 400px;
+        margin-left: -10px;
+    }
+    .joki {
+        padding-top: 55px;
+    }
+    .sidri{
+        margin: 5px;
+    }
+}
+
+.lin {
+    border-bottom: 1px solid#b5adad;
+    margin-top: 30px;
+    margin-right: 60px;
+    margin-left: 50px;
 }
