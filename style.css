@@ -29,26 +29,24 @@ a{
     margin-right: 20px;
     border-radius: 12px;
     padding-right: 20px;
+    align-items: center;
 }
 
 #cbf{
     margin-left: 80px;
     color: white;
-    margin-top: 34px;
     font-family: '-webkit-pictograph';
 }
 
 #cbf1{
     margin-left: 80px;
     color: white;
-    margin-top: 34px;
     font-family: '-webkit-pictograph';
 }
 
 #cbf2{
     margin-left: 80px;
     color: white;
-    margin-top: 34px;
     font-family: '-webkit-pictograph';
 }
 
@@ -190,6 +188,26 @@ a{
         margin-left: 10px;
         margin-right: 10px;
     }
+    #logo img{
+        width: 50%;
+        padding-left: 10px;
+        position: relative;
+        z-index: 999;
+    }
+    #logo a{
+        display: flex;
+        justify-content: center;
+    }
+    #listra{
+        margin: 0;
+        height: 60px;
+        margin-left: -25px;
+        padding-left: 22px;
+        border-radius: 0;
+    }
+    body{
+        margin-top: 0;
+    }
     #imgFutBr {
         margin: 13px;
     }
@@ -241,11 +259,34 @@ a{
         width: 100%;
     }
     #searchbox {
-        padding: 5px 0px 5px 13px;
+        /* margin-left: 20px; */
     }
     .fechado{
         width: 53px;
     }
+    .menu #logo:after {
+        -webkit-transform: skew(-30deg);
+        /* transform: skew(-30deg); */
+    }
+    #logo::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 220px;
+        background: #fbfbfb;
+        -webkit-transform: skew(-20deg);
+        transform: skew(-20deg);
+        z-index: 1;
+    }
+    #logo{
+        position: relative;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 .menu-mobile{
@@ -276,9 +317,8 @@ a{
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0,0,0,.2);
     transition: 1s;
-    margin-left: 25px;
-    margin-top: 20px;
     height: 40px;
+    margin-left: 20px;
 }
 
 .fechado {
