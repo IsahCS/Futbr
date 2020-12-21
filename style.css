@@ -190,7 +190,8 @@ a{
     }
     #logo img{
         width: 50%;
-        padding-left: 10px;
+        padding-top: 5px;
+        height: 80%;
         position: relative;
         z-index: 999;
     }
